@@ -81,6 +81,7 @@ Details about work and manifestation clusters. Each record represents a single w
 
 - `label_count`: Number of members in that group.
 - `gov_count`, `gov_prop`, `serial_count`, `serial_prop`: Counts and proportions of serials and government records in a work or manifestation. SaDDL focused on books but still processed serials and gov't docs. We recommend ignoring works where `gov_prop > .5 or serial_prop>.5`.
+- `include`: a boolean flag on whether to use a work, based on the gov and serial criterial.
 - `best_centroid`, `best_centroid_pd`: A recommendation for the preferred copy of a work or manifestation. The `_pd` recommendation is for the preferred book that is *full-text accessible* at the [HathiTrust Digital Library](https://www.hathitrust.org/) - this is useful for the clusters of duplicate works where only some copies are confirmed to be in the public domain. An alternate method for recommending the preferred copy is `best_median` and `best_median_pd`, which takes the median point of a group of books in a linear vector space. An additional PageRank-based method has not been crunched for the full dataset but can be extracted from this dataset with [provided code](https://github.com/massivetexts/compare-tools/blob/master/scripts/BestCopySelection.ipynb).
 
 ```SELECT * FROM work_stats WHERE label_count > 10 LIMIT 1```
