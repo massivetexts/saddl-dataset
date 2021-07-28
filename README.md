@@ -26,6 +26,8 @@ The current dataset is the _v.0.0.1-prelease_. The data format may be updated du
 
 The dataset is comprised of multiple tables, presented in [Apache Parquet](https://parquet.apache.org/) format. Parquet is a fast columnar storage format that is supported by many data analysis tools, such as Pandas and Dask in Python. For SQL access to parquet files, we recommend DuckDB, a portable database tool that can import Parquet as well as natively perform SQL queries over it. A DuckDB import script is included in the dataset export.
 
+An interactive notebook demonstrating download and simple use of the data can be [run in the browser on Colab](https://colab.research.google.com/github/massivetexts/saddl-dataset/blob/main/WorkingWithDatasetInSQL.ipynb).
+
 The tables included in the dataset are:
 
 #### `clean_predictions`
