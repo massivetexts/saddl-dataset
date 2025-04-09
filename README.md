@@ -4,13 +4,9 @@ This page describes the access, use, and data structure of the Similarities and 
 
 The SaDDL project used content-based methods to learn duplicate work and partial work relationships
 
-## Before you download: Easy access alternative
+## Website
 
-You can browse the relationship inferences, as well as book recommendations and work clusters, online at https://saddl.du.edu.
-
-E.g. https://saddl.du.edu/relationships/htid/hvd.hn3jbk
-
-A JSON endpoint for the dataset is also available; e.g. https://saddl.du.edu/relationships/htid/hvd.hn3jbk.json
+We maintained a website at http://saddl.du.edu for easy access to this data. For long-term preservation, that service is now wound down, and the data is preserved here.
 
 ## Downloading the Dataset
 
